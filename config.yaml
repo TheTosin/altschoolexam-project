@@ -1,0 +1,15 @@
+**config.yaml FILE**
+
+mysql_root_password: "1234"
+mysql_root_user: "root"
+http_port: "80"
+https_port: "443"
+ssh_port: "22"
+mysql_port: "3306"
+mysql_databases:
+ - name: tosindb
+mysql_users:
+ - name: tosin
+   hosts: "%"
+   password: 1234
+   priv: "tosindb.*:ALL"
